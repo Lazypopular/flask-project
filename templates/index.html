@@ -1,20 +1,39 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant Guide</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <h1>Valorant Guide by Fadetime</h1>
-    <nav>
-        <a href="{{ url_for('home') }}">หน้าแรก</a>
-        <a href="{{ url_for('agents') }}">ตัวละคร</a>
-        <a href="{{ url_for('weapons') }}">อาวุธ</a>
-    </nav>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}หน้าแรก - Valorant Guide{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 text-danger">Valorant Guide by Fadetime</h1>
+    <p class="lead">แหล่งรวมข้อมูลเกี่ยวกับตัวละคร อาวุธ และกลยุทธ์ในการเล่น Valorant</p>
+
+    <div class="mt-4">
+        <a href="{{ url_for('agents') }}" class="btn btn-danger btn-lg">🔫 ดูตัวละคร</a>
+        <a href="{{ url_for('weapons') }}" class="btn btn-outline-danger btn-lg">⚔️ ดูอาวุธ</a>
+    </div>
+</div>
+
+<!-- Section แนะนำข้อมูล -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-dark text-white border-danger">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">🔥 ตัวละครในเกม</h5>
+                    <p class="card-text">เรียนรู้ความสามารถของแต่ละ Agent และเลือกเล่นตามสไตล์ที่คุณชอบ</p>
+                    <a href="{{ url_for('agents') }}" class="btn btn-danger">ดูรายละเอียด</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-dark text-white border-danger">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">🔫 อาวุธที่ดีที่สุด</h5>
+                    <p class="card-text">ศึกษาข้อมูลของปืนแต่ละชนิด และเลือกใช้อาวุธที่เหมาะสมกับการเล่นของคุณ</p>
+                    <a href="{{ url_for('weapons') }}" class="btn btn-danger">ดูรายละเอียด</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
