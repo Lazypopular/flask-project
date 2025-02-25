@@ -1,6 +1,36 @@
-<h2>อาวุธใน Valorant</h2>
-<ul>
-    <li>Vandal - ปืนไรเฟิลแรงสูง</li>
-    <li>Phantom - ปืนไรเฟิลเก็บเสียง</li>
-    <li>Operator - สไนเปอร์สุดโหด</li>
-</ul>
+{% extends 'base.html' %}
+
+{% block title %}อาวุธ - Valorant Guide{% endblock %}
+
+{% block content %}
+<h2 class="text-center text-danger">⚔️ อาวุธใน Valorant</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card bg-dark text-white border-danger">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Vandal">
+            <div class="card-body">
+                <h5 class="card-title text-danger">Vandal</h5>
+                <p class="card-text">ไรเฟิลแรงสูง ดาเมจคงที่ทุกระยะ</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-white border-danger">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Phantom">
+            <div class="card-body">
+                <h5 class="card-title text-danger">Phantom</h5>
+                <p class="card-text">ไรเฟิลเก็บเสียง เหมาะกับการซุ่มยิง</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-dark text-white border-danger">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Operator">
+            <div class="card-body">
+                <h5 class="card-title text-danger">Operator</h5>
+                <p class="card-text">สไนเปอร์แรงสุดในเกม ยิงหัวตายทันที</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
