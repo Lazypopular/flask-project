@@ -4,33 +4,69 @@
 
 {% block content %}
 <h2 class="text-center text-danger">⚔️ อาวุธใน Valorant</h2>
-<div class="row">
-    <div class="col-md-4">
-        <div class="card bg-dark text-white border-danger">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Vandal">
-            <div class="card-body">
-                <h5 class="card-title text-danger">Vandal</h5>
-                <p class="card-text">ไรเฟิลแรงสูง ดาเมจคงที่ทุกระยะ</p>
+<div class="container">
+    <div class="row justify-content-center">
+        {% set weapons = [
+            ("Vandal", "Rifle", "อาวุธที่มีความแม่นยำสูง เหมาะกับการยิงระยะกลางถึงไกล", "https://via.placeholder.com/300"),
+            ("Phantom", "SMG", "อาวุธที่ยิงเร็วและแม่นยำในระยะใกล้ถึงกลาง", "https://via.placeholder.com/300"),
+            ("Operator", "Sniper Rifle", "อาวุธที่มีพลังทำลายสูง เหมาะสำหรับการยิงระยะไกล", "https://via.placeholder.com/300"),
+            ("Sheriff", "Handgun", "อาวุธมือเดียวที่แรงและแม่นยำในระยะใกล้", "https://via.placeholder.com/300"),
+            ("Guardian", "Rifle", "อาวุธที่มีความแม่นยำและพลังยิงปานกลาง", "https://via.placeholder.com/300"),
+            ("Spectre", "SMG", "อาวุธที่ยิงได้เร็วและมีขนาดเล็ก เหมาะกับการเคลื่อนที่เร็ว", "https://via.placeholder.com/300"),
+            ("Marshal", "Sniper Rifle", "อาวุธที่มีพลังยิงสูงแต่การยิงช้า", "https://via.placeholder.com/300"),
+            ("Bucky", "Shotgun", "อาวุธที่มีพลังโจมตีสูงในระยะใกล้", "https://via.placeholder.com/300"),
+            ("Judge", "Shotgun", "อาวุธที่มีการยิงอัตโนมัติและความเร็วสูงในระยะใกล้", "https://via.placeholder.com/300"),
+            ("Ares", "LMG", "อาวุธที่มีการยิงต่อเนื่อง เหมาะกับการควบคุมพื้นที่", "https://via.placeholder.com/300"),
+            ("Odin", "LMG", "อาวุธที่มีการยิงแบบต่อเนื่องด้วยความเร็วสูง", "https://via.placeholder.com/300"),
+            ("Classic", "Handgun", "อาวุธเริ่มต้นที่มีความแม่นยำและการยิงปานกลาง", "https://via.placeholder.com/300"),
+            ("Stinger", "SMG", "อาวุธที่ยิงได้เร็วและมีความเสียหายค่อนข้างต่ำในระยะใกล้", "https://via.placeholder.com/300"),
+            ("Frenzy", "Handgun", "อาวุธที่ยิงอัตโนมัติและรวดเร็วในระยะใกล้", "https://via.placeholder.com/300"),
+            ("Bulldog", "Rifle", "อาวุธที่ยิงได้หลายรูปแบบทั้งระยะใกล้และกลาง", "https://via.placeholder.com/300"),
+            ("Outlaw", "Shotgun", "ปืนที่ยิงเกราะเล็กนัดเดียวตาย เหมาะสำหรับการต่อสู้ระยะไกล", "https://via.placeholder.com/300")
+        ] %}
+
+        {% for weapon in weapons %}
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card bg-dark text-white border-danger shadow-lg">
+                <img src="{{ weapon[2] }}" class="card-img-top" alt="{{ weapon[0] }}">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-danger">{{ weapon[0] }}</h5>
+                    <p class="card-text">{{ weapon[1] }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card bg-dark text-white border-danger">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Phantom">
-            <div class="card-body">
-                <h5 class="card-title text-danger">Phantom</h5>
-                <p class="card-text">ไรเฟิลเก็บเสียง เหมาะกับการซุ่มยิง</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card bg-dark text-white border-danger">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Operator">
-            <div class="card-body">
-                <h5 class="card-title text-danger">Operator</h5>
-                <p class="card-text">สไนเปอร์แรงสุดในเกม ยิงหัวตายทันที</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
+
+<style>
+    body {
+        background-color: #121212;
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+    h2 {
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.6);
+    }
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #dc3545;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+    }
+    .card img {
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 2px solid #dc3545;
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
 {% endblock %}

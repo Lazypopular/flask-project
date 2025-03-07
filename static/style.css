@@ -1,11 +1,67 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #1e1e2e;
-    color: white;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
-nav a {
-    margin: 0 15px;
-    color: #ff4655;
-    text-decoration: none;
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #5A2A9E;
+}
+
+.agents-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.agent-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.agent-card:hover {
+    transform: translateY(-10px);
+}
+
+.agent-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.agent-info {
+    padding: 15px;
+}
+
+.agent-info h2 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+.agent-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+.agent-info strong {
+    color: #5A2A9E;
 }
