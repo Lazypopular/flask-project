@@ -123,6 +123,21 @@ maps_data = {
         "agents": ["Omen", "Viper", "Sova", "Jett"],
         "pros": "พื้นที่หลากหลายและยุทธศาสตร์ได้หลายทาง",
         "cons": "พื้นที่แคบและการโจมตีอาจถูกจำกัด"
+    },
+    "Lotus": {
+        "title": "Lotus",
+        "image": "images/lotus.jpg",
+        "key_points": ["A Site", "B Site", "C Site", "Middle"],
+        "attacker_spawn": "แผนที่มีประตูหมุนสามจุด",
+        "defender_spawn": "โซนเริ่มต้นที่ปลอดภัย",
+        "spike_sites": ["A Site", "B Site", "C Site"],
+        "shortcuts": "เปิดประตูหมุนเพื่อทำให้ทางสะดวกขึ้น",
+        "strategy": "ใช้ประตูหมุนให้เป็นประโยชน์ในการโจมตี",
+        "danger_spots": ["A Heaven", "C Highground"],
+        "utility_tips": "ใช้ Smoke หรือ Molotov เพื่อป้องกันการโจมตี",
+        "agents": ["Raze", "Phoenix", "Sage", "Brimstone"],
+        "pros": "ความยุ่งเหยิงจากการเปิดประตูหมุนช่วยเพิ่มความแปลกใหม่",
+        "cons": "การควบคุมจุดหลายจุดอาจจะยาก"
     }
 }
 
