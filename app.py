@@ -78,6 +78,21 @@ maps_data = {
         "agents": ["Sova", "Jett", "Raze", "Brimstone"],
         "pros": "มีพื้นที่หลากหลายสำหรับกลยุทธ์",
         "cons": "การยิงในพื้นที่แคบอาจทำให้การควบคุมยาก"
+    },
+    "Breeze": {
+        "title": "Breeze",
+        "image": "images/breeze.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Long A"],
+        "attacker_spawn": "โซนที่กว้างและมีทะเลทราย",
+        "defender_spawn": "พื้นที่ที่เปิดโล่ง",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "พื้นที่กว้างสามารถทำให้การโจมตีเร็วหรือช้าได้",
+        "strategy": "ใช้พื้นที่กว้างในการควบคุมระยะการยิง",
+        "danger_spots": ["A Heaven", "B Elbow"],
+        "utility_tips": "ใช้ Smokes หรือ Molotovs เพื่อจำกัดการมองเห็น",
+        "agents": ["Phoenix", "Sova", "Brimstone", "Jett"],
+        "pros": "การโจมตีระยะไกลมีประสิทธิภาพ",
+        "cons": "พื้นที่กว้างทำให้การควบคุมยาก"
     }
 }
 
