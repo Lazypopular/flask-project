@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}แผนที่ในเกม Valorant{% endblock %}
+
+{% block content %}
+<header class="text-center my-4">
+    <h1 class="text-primary">Valorant Maps</h1>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            {% for map in maps %}
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="/map/{{ map[1] }}" class="text-decoration-none">
+                        <div class="card bg-dark text-white border-primary shadow-lg">
+                            <img src="{{ url_for('static', filename='images/' + map[3]) }}" alt="{{ map[1] }}">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-primary">{{ map[1] }}</h5>
+                                <p class="card-text">{{ map[2] }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+
+<style>
+    h1 {
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.6);
+    }
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #007bff;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
+    }
+    .card img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        border-bottom: 2px solid #007bff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+</style>
+{% endblock %}

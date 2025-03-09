@@ -1,9 +1,9 @@
 import sqlite3
 
-conn = sqlite3.connect("agents.db")
+conn = sqlite3.connect("maps.db")
 cursor = conn.cursor()
 
-cursor.execute("SELECT * FROM agents")
+cursor.execute("SELECT * FROM maps")
 rows = cursor.fetchall()
 
 for row in rows:
