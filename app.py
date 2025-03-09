@@ -18,6 +18,21 @@ maps_data = {
         "agents": ["Omen", "Killjoy", "Sova", "Jett"],
         "pros": "มีโอกาสใช้กลยุทธ์ที่หลากหลาย, มีจุดให้ใช้ Utility ได้ดี",
         "cons": "ถ้าสูญเสีย Mid จะเสียเปรียบมาก"
+     },
+    "Bind": {
+        "title": "Bind",
+        "image": "images/bind.jpg",
+        "key_points": ["A Short", "A Bath", "B Long", "B Hookah"],
+        "attacker_spawn": "โซนกลางของแผนที่",
+        "defender_spawn": "โซนล่างของแผนที่",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "มี Teleporter ที่สามารถใช้เปลี่ยนเลนได้เร็ว",
+        "strategy": "ใช้ Teleporter อย่างชาญฉลาดเพื่อสร้างจังหวะโจมตี",
+        "danger_spots": ["A Heaven", "B Elbow"],
+        "utility_tips": "ใช้ Flash หรือ Stun ปิดมุมที่ศัตรูแอบซุ่ม",
+        "agents": ["Raze", "Phoenix", "Brimstone", "Viper"],
+        "pros": "มี Teleporter ให้ใช้กลยุทธ์ที่ไม่คาดคิด",
+        "cons": "เส้นทางแคบ อาจโดน Utility ของศัตรูง่าย"
     }
 }
 
