@@ -48,6 +48,21 @@ maps_data = {
         "agents": ["Cypher", "Brimstone", "Omen", "Sage"],
         "pros": "สามารถวาง Spike ที่หลายจุด",
         "cons": "มีทางโจมตีจากหลายทิศทาง"
+    },
+    "Split": {
+        "title": "Split",
+        "image": "images/split.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Ramps"],
+        "attacker_spawn": "โซนกลางของแผนที่",
+        "defender_spawn": "โซนที่มีการใช้เชือกและพื้นที่แคบ",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "ใช้เชือกเพื่อข้ามพื้นที่สูง",
+        "strategy": "ควบคุม Mid และ Ramp เพื่อเปิดเส้นทางไปยัง A หรือ B",
+        "danger_spots": ["A Heaven", "B Elbow"],
+        "utility_tips": "ใช้ Smokes หรือ Stuns ที่ Ramps เพื่อขัดขวางการโจมตี",
+        "agents": ["Jett", "Phoenix", "Sage", "Brimstone"],
+        "pros": "แผนที่เหมาะกับการใช้เชือกและมุมแคบ",
+        "cons": "การโจมตีผ่านกลางอาจถูกตอบโต้ได้ง่าย"
     }
 }
 
