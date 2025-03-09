@@ -26,10 +26,7 @@ agents = [
     ("Waylay", "Duelist", "เข้าไซท์แบบรวดเร็วและดุดันด้วยสกิลที่เน้นการบุกทะลวง", "https://via.placeholder.com/300")
 ]
 
-# ✅ เปลี่ยน desc เป็น description
 cursor.executemany("INSERT INTO agents (name, role, description, img) VALUES (?, ?, ?, ?)", agents)
 
 conn.commit()
 conn.close()
-
-print("✅ เพิ่มข้อมูล Agents ลงฐานข้อมูลสำเร็จ!")

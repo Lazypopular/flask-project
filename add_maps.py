@@ -10,7 +10,6 @@ maps_data = [
     ('Abyss', 'แผนที่ลอยฟ้าที่ไม่มีขอบเขต', 'abyss.jpg')
 ]
 
-
 cursor.executemany("INSERT INTO maps (name, description, img) VALUES (?, ?, ?)", maps_data)
 conn.commit()
 conn.close()

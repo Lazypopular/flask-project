@@ -3,7 +3,6 @@ import sqlite3
 conn = sqlite3.connect("maps.db")
 cursor = conn.cursor()
 
-# ✅ สร้างตารางใหม่
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS maps (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -15,6 +14,3 @@ CREATE TABLE IF NOT EXISTS maps (
 
 conn.commit()
 conn.close()
-
-print("✅ สร้างตาราง agents สำเร็จ!")
-
