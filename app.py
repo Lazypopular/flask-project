@@ -93,6 +93,21 @@ maps_data = {
         "agents": ["Phoenix", "Sova", "Brimstone", "Jett"],
         "pros": "การโจมตีระยะไกลมีประสิทธิภาพ",
         "cons": "พื้นที่กว้างทำให้การควบคุมยาก"
+    },
+    "Fracture": {
+        "title": "Fracture",
+        "image": "images/fracture.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Back Site"],
+        "attacker_spawn": "เริ่มแยกกันสองฝั่ง",
+        "defender_spawn": "เริ่มจากตำแหน่งที่แยกกัน",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "จุดเชื่อมระหว่างสองฝั่งช่วยให้การโจมตียากขึ้น",
+        "strategy": "ใช้การแยกตัวเพื่อเพิ่มทางเลือกในการโจมตี",
+        "danger_spots": ["A Highground", "B Elbow"],
+        "utility_tips": "ใช้ Smokes ปิดการมองเห็นที่ Mid",
+        "agents": ["Raze", "Jett", "Brimstone", "Sage"],
+        "pros": "สามารถแยกฝั่งและสร้างความยุ่งเหยิงได้",
+        "cons": "ต้องระวังการโจมตีจากทั้งสองฝั่ง"
     }
 }
 
