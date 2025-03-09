@@ -153,7 +153,22 @@ maps_data = {
         "agents": ["Brimstone", "Sage", "Jett", "Phoenix"],
         "pros": "บรรยากาศที่สวยงาม ช่วยให้การเคลื่อนที่ง่าย",
         "cons": "มีมุมที่ยากต่อการป้องกัน"
-    }
+    },
+    "Abyss" : {
+        "title": "Abyss",
+        "image": "images/abyss.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Highground"],
+        "attacker_spawn": "แผนที่ลอยฟ้าที่ไม่มีขอบเขต",
+        "defender_spawn": "พื้นที่ที่ลอยฟ้า",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "มุมสูงช่วยให้มองเห็นพื้นที่ได้ดี",
+        "strategy": "ใช้ความสูงในการโจมตี",
+        "danger_spots": ["A Highground", "B Window"],
+        "utility_tips": "ใช้ Smokes เพื่อปิดจุดที่มองเห็นได้ดี",
+        "agents": ["Sova", "Brimstone", "Phoenix", "Jett"],
+        "pros": "การเคลื่อนที่จากมุมสูงช่วยให้โจมตีได้ง่าย",
+        "cons": "การควบคุมพื้นที่แคบยาก"
+    },
 }
 
 def get_db():
