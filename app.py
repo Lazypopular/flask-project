@@ -138,6 +138,21 @@ maps_data = {
         "agents": ["Raze", "Phoenix", "Sage", "Brimstone"],
         "pros": "ความยุ่งเหยิงจากการเปิดประตูหมุนช่วยเพิ่มความแปลกใหม่",
         "cons": "การควบคุมจุดหลายจุดอาจจะยาก"
+    },
+    "Sunset": {
+        "title": "Sunset",
+        "image": "images/sunset.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Sunset Overlook"],
+        "attacker_spawn": "บรรยากาศเมืองลอสแองเจลิส",
+        "defender_spawn": "พื้นที่ในเมืองที่มีแสงสะท้อน",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "บรรยากาศที่สามารถใช้ในการเคลื่อนที่อย่างรวดเร็ว",
+        "strategy": "ใช้พื้นที่กว้างเพื่อโจมตีจากหลายมุม",
+        "danger_spots": ["A Overlook", "B Elbow"],
+        "utility_tips": "ใช้ Smoke หรือ Stuns ในพื้นที่ที่เปิดโล่ง",
+        "agents": ["Brimstone", "Sage", "Jett", "Phoenix"],
+        "pros": "บรรยากาศที่สวยงาม ช่วยให้การเคลื่อนที่ง่าย",
+        "cons": "มีมุมที่ยากต่อการป้องกัน"
     }
 }
 
