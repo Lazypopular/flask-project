@@ -41,6 +41,21 @@
             border-color: #dc3545;
         }
 
+        /* Button Styles */
+        .details-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .details-button:hover {
+            background-color: #a71d2a;
+        }
+
         /* Main Content Styling */
         .container {
             margin-top: 70px;  /* Added space for fixed navbar */
@@ -94,13 +109,6 @@
             margin-top: 50px;
         }
 
-        /* Hover effect for links */
-        .navbar-nav .nav-link, .navbar-brand {
-            transition: transform 0.3s ease;
-        }
-        .navbar-nav .nav-link:hover, .navbar-brand:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -128,26 +136,34 @@
     <!-- Main Content -->
     <div class="container mt-5 pt-5">
         {% block content %}
-        <h2 class="section-title">คำแนะนำเกี่ยวกับ Valorant</h2>
-        <div class="row justify-content-center">
-            <!-- Card 1: Gameplay -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-dark text-white shadow-lg">
-                    <img src="{{ url_for('static', filename='images/gameplay.jpg') }}" class="card-img-top" alt="Gameplay">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="static/images/jett.jpg" class="card-img-top" alt="Jett">
                     <div class="card-body">
-                        <h5 class="card-title">🎯 รูปแบบการเล่น</h5>
-                        <p class="card-text">Valorant เป็นเกมที่ผสมผสานทักษะการยิงและกลยุทธ์การเล่นทีมที่ต้องใช้การสื่อสารและความแม่นยำในการปฏิบัติภารกิจต่างๆ</p>
+                        <h5 class="card-title">Jett</h5>
+                        <p class="card-text">สายเร็ว ใช้ความว่องไวในการโจมตี</p>
+                        <a href="jett.html" class="details-button">รายละเอียด</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Card 2: Agents and Weapons -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-dark text-white shadow-lg">
-                    <img src="{{ url_for('static', filename='images/agents.jpg') }}" class="card-img-top" alt="Agents">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="static/images/phoenix.jpg" class="card-img-top" alt="Phoenix">
                     <div class="card-body">
-                        <h5 class="card-title">🕵️‍♂️ ตัวละครและอาวุธ</h5>
-                        <p class="card-text">ใน Valorant มีตัวละครที่มีทักษะเฉพาะตัว และอาวุธที่หลากหลายให้เลือกใช้งาน ทำให้แต่ละการเล่นมีความท้าทายและสนุกสนานยิ่งขึ้น</p>
+                        <h5 class="card-title">Phoenix</h5>
+                        <p class="card-text">ใช้ไฟเป็นอาวุธ ฟื้นพลังชีวิตตัวเองได้</p>
+                        <a href="phoenix.html" class="details-button">รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="static/images/sova.jpg" class="card-img-top" alt="Sova">
+                    <div class="card-body">
+                        <h5 class="card-title">Sova</h5>
+                        <p class="card-text">เชี่ยวชาญการสอดแนม ใช้ลูกศรเปิดโปงศัตรู</p>
+                        <a href="sova.html" class="details-button">รายละเอียด</a>
                     </div>
                 </div>
             </div>

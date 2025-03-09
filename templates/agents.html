@@ -4,7 +4,7 @@
 
 {% block content %}
 <header class="text-center my-4">
-    <h1 class="text-danger">ตัวละครในเกม Valorant</h1>
+    <h1 class="text-danger">Valorant Agents</h1>
 </header>
 
 <main>
@@ -46,9 +46,14 @@
         box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
     }
     .card img {
-        height: 180px;
-        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: black;
         border-bottom: 2px solid #dc3545;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .card-title {
         font-size: 1.5rem;

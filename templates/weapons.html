@@ -3,32 +3,34 @@
 {% block title %}อาวุธ - Valorant Guide{% endblock %}
 
 {% block content %}
-<h2 class="text-center text-danger">⚔️ อาวุธใน Valorant</h2>
+<h2 class="text-center text-danger">Valorant Weapons</h2>
 <div class="container">
     <div class="row justify-content-center">
         {% set weapons = [
-            ("Vandal", "Rifle", "อาวุธที่มีความแม่นยำสูง เหมาะกับการยิงระยะกลางถึงไกล", "https://via.placeholder.com/300"),
-            ("Phantom", "SMG", "อาวุธที่ยิงเร็วและแม่นยำในระยะใกล้ถึงกลาง", "https://via.placeholder.com/300"),
-            ("Operator", "Sniper Rifle", "อาวุธที่มีพลังทำลายสูง เหมาะสำหรับการยิงระยะไกล", "https://via.placeholder.com/300"),
-            ("Sheriff", "Handgun", "อาวุธมือเดียวที่แรงและแม่นยำในระยะใกล้", "https://via.placeholder.com/300"),
-            ("Guardian", "Rifle", "อาวุธที่มีความแม่นยำและพลังยิงปานกลาง", "https://via.placeholder.com/300"),
-            ("Spectre", "SMG", "อาวุธที่ยิงได้เร็วและมีขนาดเล็ก เหมาะกับการเคลื่อนที่เร็ว", "https://via.placeholder.com/300"),
-            ("Marshal", "Sniper Rifle", "อาวุธที่มีพลังยิงสูงแต่การยิงช้า", "https://via.placeholder.com/300"),
-            ("Bucky", "Shotgun", "อาวุธที่มีพลังโจมตีสูงในระยะใกล้", "https://via.placeholder.com/300"),
-            ("Judge", "Shotgun", "อาวุธที่มีการยิงอัตโนมัติและความเร็วสูงในระยะใกล้", "https://via.placeholder.com/300"),
-            ("Ares", "LMG", "อาวุธที่มีการยิงต่อเนื่อง เหมาะกับการควบคุมพื้นที่", "https://via.placeholder.com/300"),
-            ("Odin", "LMG", "อาวุธที่มีการยิงแบบต่อเนื่องด้วยความเร็วสูง", "https://via.placeholder.com/300"),
-            ("Classic", "Handgun", "อาวุธเริ่มต้นที่มีความแม่นยำและการยิงปานกลาง", "https://via.placeholder.com/300"),
-            ("Stinger", "SMG", "อาวุธที่ยิงได้เร็วและมีความเสียหายค่อนข้างต่ำในระยะใกล้", "https://via.placeholder.com/300"),
-            ("Frenzy", "Handgun", "อาวุธที่ยิงอัตโนมัติและรวดเร็วในระยะใกล้", "https://via.placeholder.com/300"),
-            ("Bulldog", "Rifle", "อาวุธที่ยิงได้หลายรูปแบบทั้งระยะใกล้และกลาง", "https://via.placeholder.com/300"),
-            ("Outlaw", "Shotgun", "ปืนที่ยิงเกราะเล็กนัดเดียวตาย เหมาะสำหรับการต่อสู้ระยะไกล", "https://via.placeholder.com/300")
+            ("Vandal", "Rifle", "อาวุธที่มีความแม่นยำสูง เหมาะกับการยิงระยะกลางถึงไกล", "Vandal.jpg"),
+            ("Phantom", "SMG", "อาวุธที่ยิงเร็วและแม่นยำในระยะใกล้ถึงกลาง", "Phantom.jpg"),
+            ("Operator", "Sniper Rifle", "อาวุธที่มีพลังทำลายสูง เหมาะสำหรับการยิงระยะไกล", "Operator.jpg"),
+            ("Sheriff", "Handgun", "อาวุธมือเดียวที่แรงและแม่นยำในระยะใกล้", "Sheriff.jpg"),
+            ("Guardian", "Rifle", "อาวุธที่มีความแม่นยำและพลังยิงปานกลาง", "Guardian.jpg"),
+            ("Spectre", "SMG", "อาวุธที่ยิงได้เร็วและมีขนาดเล็ก เหมาะกับการเคลื่อนที่เร็ว", "Spectre.jpg"),
+            ("Marshal", "Sniper Rifle", "อาวุธที่มีพลังยิงสูงแต่การยิงช้า", "Marshal.jpg"),
+            ("Bucky", "Shotgun", "อาวุธที่มีพลังโจมตีสูงในระยะใกล้", "Bucky.jpg"),
+            ("Judge", "Shotgun", "อาวุธที่มีการยิงอัตโนมัติและความเร็วสูงในระยะใกล้", "Judge.jpg"),
+            ("Ares", "LMG", "อาวุธที่มีการยิงต่อเนื่อง เหมาะกับการควบคุมพื้นที่", "Ares.jpg"),
+            ("Odin", "LMG", "อาวุธที่มีการยิงแบบต่อเนื่องด้วยความเร็วสูง", "Odin.jpg"),
+            ("Classic", "Handgun", "อาวุธเริ่มต้นที่มีความแม่นยำและการยิงปานกลาง", "Classic.jpg"),
+            ("Stinger", "SMG", "อาวุธที่ยิงได้เร็วและมีความเสียหายค่อนข้างต่ำในระยะใกล้", "Stinger.jpg"),
+            ("Frenzy", "Handgun", "อาวุธที่ยิงอัตโนมัติและรวดเร็วในระยะใกล้", "Frenzy.jpg"),
+            ("Bulldog", "Rifle", "อาวุธที่ยิงได้หลายรูปแบบทั้งระยะใกล้และกลาง", "Bulldog.jpg"),
+            ("Outlaw", "Shotgun", "ปืนที่ยิงเกราะเล็กนัดเดียวตาย เหมาะสำหรับการต่อสู้ระยะไกล", "Outlaw.jpg"),
+            ("Ghost", "Pistol", "ปืนพกที่มีความแม่นยำสูงและเสียงเบา เหมาะสำหรับการลอบสังหาร", "Ghost.jpg"),
+            ("Shorty", "Shotgun", "ปืนลูกซองขนาดเล็ก ใช้ในระยะประชิดเพื่อสร้างความเสียหายรุนแรง", "Shorty.jpg")
         ] %}
 
         {% for weapon in weapons %}
         <div class="col-md-4 col-sm-6 mb-4">
             <div class="card bg-dark text-white border-danger shadow-lg">
-                <img src="{{ weapon[2] }}" class="card-img-top" alt="{{ weapon[0] }}">
+                <img src="{{ url_for('static', filename='images/' + weapon[3]) }}" class="card-img-top" alt="{{ weapon[0] }}">
                 <div class="card-body text-center">
                     <h5 class="card-title text-danger">{{ weapon[0] }}</h5>
                     <p class="card-text">{{ weapon[1] }}</p>
@@ -60,9 +62,14 @@
         box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
     }
     .card img {
-        height: 180px;
-        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: black;
         border-bottom: 2px solid #dc3545;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .card-title {
         font-size: 1.5rem;
