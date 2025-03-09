@@ -33,6 +33,21 @@ maps_data = {
         "agents": ["Raze", "Phoenix", "Brimstone", "Viper"],
         "pros": "มี Teleporter ให้ใช้กลยุทธ์ที่ไม่คาดคิด",
         "cons": "เส้นทางแคบ อาจโดน Utility ของศัตรูง่าย"
+    },
+    "Haven": {
+        "title": "Haven",
+        "image": "images/haven.jpg",
+        "key_points": ["A Site", "B Site", "C Site", "Mid"],
+        "attacker_spawn": "โซนกลางของแผนที่",
+        "defender_spawn": "โซนที่มีจุดวาง Spike ถึง 3 จุด",
+        "spike_sites": ["A Site", "B Site", "C Site"],
+        "shortcuts": "ระวังการโจมตีจากหลายทิศทางพร้อมกัน",
+        "strategy": "เน้นการควบคุมทั้งสามจุด A, B และ C เพื่อป้องกันได้ดี",
+        "danger_spots": ["A Heaven", "C Window"],
+        "utility_tips": "ใช้ Smoke หรือ Flash ที่จุดสำคัญเพื่อช่วยในการเคลียร์พื้นที่",
+        "agents": ["Cypher", "Brimstone", "Omen", "Sage"],
+        "pros": "สามารถวาง Spike ที่หลายจุด",
+        "cons": "มีทางโจมตีจากหลายทิศทาง"
     }
 }
 
