@@ -108,6 +108,21 @@ maps_data = {
         "agents": ["Raze", "Jett", "Brimstone", "Sage"],
         "pros": "สามารถแยกฝั่งและสร้างความยุ่งเหยิงได้",
         "cons": "ต้องระวังการโจมตีจากทั้งสองฝั่ง"
+    },
+    "Pearl": {
+        "title": "Pearl",
+        "image": "images/pearl.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "City Center"],
+        "attacker_spawn": "สไตล์เมืองใต้น้ำ",
+        "defender_spawn": "จุดศูนย์กลางของเมืองอนาคต",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "การย้ายที่เร็วในเมืองใต้น้ำ",
+        "strategy": "ใช้เมืองใต้น้ำเพื่อขัดขวางการเคลื่อนไหว",
+        "danger_spots": ["A Heaven", "B Elbow"],
+        "utility_tips": "ใช้ Flash หรือ Smoke เพื่อปิดมุมที่ศัตรูซุ่ม",
+        "agents": ["Omen", "Viper", "Sova", "Jett"],
+        "pros": "พื้นที่หลากหลายและยุทธศาสตร์ได้หลายทาง",
+        "cons": "พื้นที่แคบและการโจมตีอาจถูกจำกัด"
     }
 }
 
