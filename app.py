@@ -63,6 +63,21 @@ maps_data = {
         "agents": ["Jett", "Phoenix", "Sage", "Brimstone"],
         "pros": "แผนที่เหมาะกับการใช้เชือกและมุมแคบ",
         "cons": "การโจมตีผ่านกลางอาจถูกตอบโต้ได้ง่าย"
+    },
+    "Icebox": {
+        "title": "Icebox",
+        "image": "images/icebox.jpg",
+        "key_points": ["A Site", "B Site", "Mid", "Zipline"],
+        "attacker_spawn": "โซนที่สูงชันและมีหิมะ",
+        "defender_spawn": "พื้นที่ที่มี Zipline และสูง",
+        "spike_sites": ["A Site", "B Site"],
+        "shortcuts": "ใช้ Zipline เพื่อหลบการโจมตีหรือเพิ่มทางเลือกในการบุก",
+        "strategy": "ใช้ Zipline เพื่อเพิ่มความหลากหลายในการโจมตี",
+        "danger_spots": ["A Rafters", "B Back"],
+        "utility_tips": "ใช้ Smoke เพื่อปิดมุมที่สูงและช่วยเพิ่มความคุ้มครอง",
+        "agents": ["Sova", "Jett", "Raze", "Brimstone"],
+        "pros": "มีพื้นที่หลากหลายสำหรับกลยุทธ์",
+        "cons": "การยิงในพื้นที่แคบอาจทำให้การควบคุมยาก"
     }
 }
 
